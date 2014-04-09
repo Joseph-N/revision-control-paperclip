@@ -1,6 +1,6 @@
 == Revision Control With Paperclip - Rails
 
-This app is made off a tutorial found at http://josephndungu.com/tutorials/revision-control-with-paperclip
+This app is made off a tutorial found at http://josephndungu.com/tutorials/revision-control-with-paperclip-rails
 
 To test it out, you will need to:
 
