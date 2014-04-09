@@ -15,6 +15,9 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  <p>
+  <%= image_tag @logo.image.url(:medium) %>
+  </p>
 
   <div class="field">
     <%= f.file_field :image %>
