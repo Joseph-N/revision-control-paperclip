@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<%= image_tag @logo.image.url(:medium) %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @logo.name %>
+</p>
+
+<p>
+	<% if @logo.version > 1 %>
+  	 	<%= link_to "Previous version", :version => @logo.version-1 %>
+  	<% end %>
+
+  	<% if params[:version] %>
+  		<%= link_to "Latest version", :version => nil %>
+	<% end %>
+</p>
+
+<%= link_to 'Edit', edit_logo_path(@logo) %> |
+<%= link_to 'Back', logos_path %> |
+Version <%= @logo.version %>
